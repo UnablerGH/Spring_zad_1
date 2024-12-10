@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Product Management</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a th:href="@{/products}">Product List</a></li>
+            <li><a th:href="@{/products/new}">Add Product</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div th:replace="~{::body}"></div>
+</main>
+</body>
+</html>
